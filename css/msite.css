@@ -1,0 +1,242 @@
+/* ----------------------*/ /* ---------->>> GLOBAL <<<-----------*/ /* ----------------------*/
+* {
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    margin: 0px;
+}
+img {
+    margin: auto;
+    display: block;
+}
+/* ----------------------*/ /* ---------->>> BANNER <<<-----------*/ /* ----------------------*/
+#guide {
+    width: 100%;
+    height: 10vh;
+    background-color: #70b244;
+    font-family: 'Franklin Gothic Heavy','Franklin Gothic', 'ITC Franklin Gothic', 
+                  'Arial', 'sans-serif';
+}
+#guidetext {
+    background-color: #70b244;
+    color: white;
+  
+    font-family: 'Franklin Gothic Medium','Franklin Gothic', 'ITC Franklin Gothic', 
+                  'Arial', 'sans-serif';
+    font-size: 4em;
+    text-align: center;
+  
+    overflow: hidden;
+    
+    height: 100%;
+    margin: auto;
+    padding: .25em;
+    width: 100%
+}
+#logo img {
+    height: 10vh;
+    width: 60%;
+}
+#nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0em;
+    height: 15vh;
+    width: 100%;
+    
+}
+#nav li {
+    float: left;
+    padding: .625em;
+    height: 100%;
+    width: 33.33%;
+    
+    color: white;
+    background-color: #3a4e8c;
+    
+    border-color: white;
+    border-style: solid;
+    border-width: 0.125em 0.125em 0em 0.125em;
+    
+}
+#nav li:first-child {
+    border-left:none;
+}
+#nav li:last-child {
+    border-right:none;
+}
+#nav a {
+    display: block;
+    height: 100%;
+    width: auto;
+    margin: auto;
+    padding: 0em;
+  
+    
+    font-family: 'Franklin Gothic Heavy','Franklin Gothic', 'ITC Franklin Gothic', 
+                  'Arial', 'sans-serif';
+    font-size: 3.5em;
+    font-style: italic;
+    text-align: center;
+    text-decoration: none;
+    
+    color: white;
+    background-color: #3a4e8c;
+}
+/* ----------------------*/ /* ---------->>> CONTENT <<<-----------*/ /* ----------------------*/
+#bestorientation img {
+    float: center;
+}
+#btitle {
+    font-weight: bold;
+}
+#busschedule {
+    height: 20%;
+}
+#busschedule img{
+    width: 80%;
+}
+#bustext, #clintontext, #locationstext, #terrehautetext {
+    height: 60%;
+  
+    background-size: 100% 100%;
+}
+#bustext p {
+    font-size: 3.00em;
+}
+#clintontext p, #terrehautetext p{
+    font-size: 1.75em;
+}
+#contactsection img {
+    height: 20vh;
+    width: 80%;
+    padding-bottom: 1em;
+}
+#content {
+    height: 55vh;
+    margin: 0;
+    padding: 1.25em;
+    
+    background-color: #D3D5D7;
+}
+#directions {
+    height: 20%;
+}
+#directions img {
+    height: 100%;
+}
+#imgspacing {
+    height: 2%;
+}
+#hometabs {
+    height: 100%;
+}
+#hometabs img{
+    height: 27%;
+    width: 80%;
+}
+#locationstext p{
+    font-size: 2.25em;
+}
+#sitelocations {
+    height: 100%;
+}
+#sitelocations img{
+    height: 18%;
+    width: 80%;
+}
+#textbox {
+    margin: auto;
+    padding-top: 1em;
+    width: 80%;
+  
+    background-image: url("../images/textbox_tab.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#textbox p {
+    margin: auto;
+    padding-bottom: 1em;
+    width: 90%;
+  
+    text-align: left;
+}
+#textbox #bustitle p{
+    text-align: center;
+}
+/* ----------------------*/ /* ---------->>> FOOTER <<<-----------*/ /* ----------------------*/
+#footer {
+    height: 10vh;
+  
+   background-color: #D3D5D7;
+}
+#footer img {
+    float: right;
+    height: 80%;
+  
+    width: 40%;
+}
+#pmode img {
+    display: none;
+}
+#desktoprec img{
+    display: none;
+}
+/* ------------------*/ /* ---------->>> MEDIA QUERIES <<<-----------*/ /* ------------------*/
+@media only screen and (orientation: landscape) {
+    #guidetext, #nav a {
+        font-size: 1.75em;
+    }
+    #busschedule img {
+        width: 20%;
+    }
+    #bustext p{
+        font-size: 1.3em;
+    }
+    #clintontext p, #terrehautetext p{
+        font-size: .65em;
+    }
+    #footer img {
+        float: right;
+        height: 90%;
+  
+        width: 20%;
+    }
+    #hometabs img{
+        height: 30%;
+        width: 50%;
+    }
+    #locationstext p{
+        font-size: .75em;
+    }
+    #logo img {
+        width: 30%;
+    }
+    #pmode {
+        height: 100%;
+        float: left;
+        width: 25%;
+    }
+    #pmode img {
+        display: block;
+        width: 100%; 
+    }
+    #sitelocations img{
+        height: 19%;
+        width: 50%;
+    }
+}
+@media only screen  and (min-device-width: 800px), only screen and (min-device-height: 800px) {
+    #desktoprec {
+        float: right;
+        height: 100%;
+        width: 25%;
+    }
+    #desktoprec img {
+        display: block;
+        width: 100%;
+    }
+}
